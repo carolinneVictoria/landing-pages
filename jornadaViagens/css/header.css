@@ -4,6 +4,7 @@ header{
     justify-content: space-between;
     align-items: flex-start;
     padding: 38px 48px;
+    position: relative;
 }
 .logo{
     display: inline-block;
@@ -15,7 +16,26 @@ header{
 }
 input[type="checkbox"]:checked ~ nav{
     display: block;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-terciary-color);
 }
 nav{
     display: none;
+    
+}
+.list-links{
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+.list-links li{
+    margin: 16px 0;
+    margin-left: 30px;
+}
+.list-links li a{
+    color: var(--text-secondary-color);
+    text-decoration: none;
 }
