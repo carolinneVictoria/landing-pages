@@ -1,7 +1,14 @@
-.hero-img{
+.hero .hero-img,
+.bottom-hero .hero-img{
     height: 400px;
     width: 100%;
+}
+.hero .hero-img{
     background-image: url('../assets/bannerHomepage.png');
+    background-size: cover;
+}
+.bottom-hero .hero-img{
+    background-image: url('../assets/footer-img.png');
     background-size: cover;
 }
 .hero h2{
@@ -16,10 +23,15 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero-img{
+    .hero h.ero-img{
         height: 620px;
         width: 100%;
         background-image: url('../assets/bannerTablet.jpg');
+        background-size: cover;
+    }
+    .bottom-hero .hero-img {
+        height: 400px;
+        background: url('../assets/footer-img.png') no-repeat;
         background-size: cover;
     }
     .hero h2{
@@ -28,10 +40,15 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    .hero-img{
+    .hero .hero-img{
         height: 620px;
         width: 100%;
         background-image: url('../assets/Maldivas.jpg');
+        background-size: cover;
+    }
+    .bottom-hero .hero-img {
+        height: 600px;
+        background: url('../assets/footer-img.png') no-repeat;
         background-size: cover;
     }
     .hero h2{
