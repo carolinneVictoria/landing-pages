@@ -18,10 +18,6 @@
     text-align: center;
 }
 .offers-card header{
-    display: block;
-    background-color: transparent;
-    position: static;
-    padding: 0;
     margin-bottom: 24px;
 }
 .offers-card header p{
@@ -71,6 +67,7 @@
     .offers-card{
         width: 420px;
         height: 308px;
+
     }
     .offers-card header h3{
         font-size: 48px;
@@ -81,7 +78,7 @@
 }
 @media screen and (min-width: 1280px) {
     .offers-card{
-        width: 588px;
+        width: 400px;
     }
 }
 @media screen and (min-width: 1920px) {
