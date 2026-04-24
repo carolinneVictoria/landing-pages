@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 112px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.logo-img{
+    width: 27px;
+    height: 27px;
+}
+.tituloLogo{
+    font-size: 18px;
+    font-weight: 500;
+    width: 113px;
+    height: 24px;
+    color: #3A404E;
+}
+ul{
+    list-style: none;
+}
+.list-links{
+    font-size: 16px;
+    font-weight: 500;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #667085;
+}
+.botoes{
+    gap: 8px;
+}
+.btn-entrar{
+    color: #667085;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+.btn-cadastrar{
+    color: #FFFFFF;
+    background-color: #8E2424;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #8E2424;
+}
+.btn-cadastrar:hover{
+    background-color: #711a1a;
+    color: #FFFFFF;
+    border: 1px solid #8E2424;
+    transition: all 0.3s ease-in-out;
+}
