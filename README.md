@@ -1,4 +1,5 @@
 Este repositório reúne algumas **landing pages** desenvolvidas com foco em práticas modernas de **CSS**, priorizando **responsividade**, **SEO** e **acessibilidade**.
+Acesse aqui: https://carolinnevictoria.github.io/landing-pages/
 
 ---
 
