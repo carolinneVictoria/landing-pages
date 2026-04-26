@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(cabecalho.css);
+@import url(metricas.css);
 
 :root{
     --text-color: #667085;

@@ -1,0 +1,31 @@
+.metricas-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 112px;
+    gap: 32px;
+}
+.metricas-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.metricas-container div h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 12px;
+}
+.metricas-container div h4{
+    font-size: 18px;
+    color: var(--tittle-color);
+    font-weight: 500;
+}
+.metricas-container div p{
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+    max-width: 400px;
+    text-align: left;
+}
