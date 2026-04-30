@@ -44,29 +44,3 @@ a{
     text-decoration: none;
     color: var(--text-color);
 }
-.botoes{
-    gap: 8px;
-}
-.btn-entrar{
-    color: var(--text-color);
-    background-color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 18px;
-    border-radius: 8px;
-}
-.btn-cadastrar{
-    color: #FFFFFF;
-    background-color: var(--main-color);
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 18px;
-    border-radius: 8px;
-    border: 1px solid var(--main-color);
-}
-.btn-cadastrar:hover{
-    background-color: #711a1a;
-    color: #FFFFFF;
-    border: 1px solid var(--main-color);
-    transition: all 0.3s ease-in-out;
-}
