@@ -1,0 +1,23 @@
+@import url(header.css);
+@import url(lista-consultas.css);
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --tittle-color: #464646;
+    --text-color: #A3A3A3;
+
+    --button-video: #FFB050;
+    --button-audio: #ECECEC;
+    --button-adress: #4894FF;
+
+    --divisor: #464646;
+    
+    --tittle-weight: 700;
+    --text-weight: 400;
+}
