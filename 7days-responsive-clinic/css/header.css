@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 22px;
+    width: 100%;
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.info-header{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.header-perfil{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    top: 65px;
+    left: 16px;
+}
+.info-header h1{
+    color: var(--tittle-color);
+    font-size: 22px;
+    font-weight: var(--tittle-weight);
+}
+.info-header p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: var(--text-weight);
+}
