@@ -1,21 +1,41 @@
-.lista-consultas{
+.lista-consultas {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
     box-sizing: border-box;
 }
-.dia-consulta{
+
+@media (min-width: 768px) {
+    .lista-consultas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 0 24px;
+    }
+
+    .dia-consulta {
+        grid-column: 1 / -1;
+    }
+
+    .consulta {
+        margin-bottom: 0;
+    }
+}
+
+.dia-consulta {
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.dia-consulta h2{
+
+.dia-consulta h2 {
     margin: 8px 0;
     color: var(--tittle-color);
     font-size: 16px;
     font-weight: var(--tittle-weight);
 }
+
 .consulta {
     display: flex;
     flex-direction: column;
@@ -54,12 +74,14 @@
     font-weight: var(--tittle-weight);
     line-height: 160%;
 }
+
 .tipo-consulta {
     display: flex;
     align-items: center;
     gap: 4px;
 }
-.icone-consulta{
+
+.icone-consulta {
     width: 16;
     height: 10px;
 }
@@ -70,7 +92,7 @@
     font-weight: var(--text-weight);
 }
 
-.icone{
+.icone {
     width: 32px;
     height: 32px;
 }
@@ -93,6 +115,7 @@ hr {
     font-weight: 500;
     color: var(--tittle-color);
 }
+
 .botoes-consulta {
     display: flex;
     gap: 16px;
@@ -109,22 +132,65 @@ hr {
     cursor: pointer;
 }
 
-.botao-ligar-audio{
+.botao-ligar-audio {
     background-color: var(--button-audio);
     color: var(--tittle-color);
     font-size: 14px;
     font-weight: 500;
 }
-.botao-ligar-video{
+
+.botao-ligar-video {
     background-color: var(--button-video);
     color: white;
     font-size: 14px;
     font-weight: 500;
 }
-.botao-endereco{
+
+.botao-endereco {
     background-color: var(--button-adress);
     color: white;
     font-size: 14px;
     font-weight: 500;
     width: 100%;
+}
+
+/* Responsividade*/
+@media (min-width: 768px) {
+    .lista-consultas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .consulta {
+        width: 100%;
+        margin-bottom: 0;
+
+    }
+    .dia-consulta {
+        grid-column: 1 / -1;
+
+        height: auto;
+        margin-bottom: -8px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .lista-consultas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 66px;
+    }
+
+    .consulta {
+        width: 100%;
+        margin-bottom: 0;
+
+    }
+    .dia-consulta {
+        grid-column: 1 / -1;
+
+        height: auto;
+        margin-bottom: -8px;
+    }
 }
