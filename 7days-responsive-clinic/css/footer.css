@@ -65,7 +65,7 @@ footer {
 /* Botões adicionais */
 .botoes-adicionais {
     position: fixed;
-    bottom: 135px;
+    bottom: 140px;
     right: 24px;
     display: flex;
     flex-direction: column;
@@ -78,6 +78,9 @@ footer {
 .botoes-adicionais.ativo {
     opacity: 1;
     visibility: visible;
+}
+.botoes-adicionais img:hover {
+    transform: scale(1.1);
 }
 .botao-pin{
     display: flex;
