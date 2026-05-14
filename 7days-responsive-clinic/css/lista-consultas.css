@@ -142,7 +142,7 @@ hr {
     .lista-consultas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 16px;
     }
 
     .consulta {
@@ -162,7 +162,6 @@ hr {
     .lista-consultas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 66px;
     }
 
     .consulta {
@@ -174,6 +173,6 @@ hr {
         grid-column: 1 / -1;
 
         height: auto;
-        margin-bottom: -8px;
+        margin-bottom: 28px;
     }
 }
