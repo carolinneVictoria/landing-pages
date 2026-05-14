@@ -331,5 +331,42 @@
         </div>
     </footer>
 
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Botões adicionais -->
+    <div class="botoes-adicionais" id="botoesAdicionais">
+        <div class="botao-pin">
+            <label class="label-adicional">Nova consulta na casa do paciente</label>
+            <img src="assets/pin-fab.png" alt="Pin" class="botao-adicional botao-nova-consulta">
+        </div>
+        <div class="botao-pin">
+            <label class="label-adicional">Nova consulta por video</label>
+            <img src="assets/camera-fab.png" alt="Camera" class="botao-adicional botao-nova-consulta">
+        </div>
+
+        <!--
+        <button class="botao-adicional botao-novo-paciente">➕ Novo Paciente</button>
+        <button class="botao-adicional botao-agendar">📅 Agendar Consulta</button>
+        -->
+
+    </div>
+
+    <script>
+        const botaoMaisOpcoes = document.querySelector('.botao-mais-opcoes');
+        const overlay = document.getElementById('overlay');
+        const botoesAdicionais = document.getElementById('botoesAdicionais');
+
+        botaoMaisOpcoes.addEventListener('click', () => {
+            overlay.classList.toggle('ativo');
+            botoesAdicionais.classList.toggle('ativo');
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('ativo');
+            botoesAdicionais.classList.remove('ativo');
+        });
+    </script>
+
 </body>
 </html>
