@@ -65,15 +65,72 @@
     gap: 32px;
     border-radius: 16px;
 }
+
 .informacoes span {
     font-size: 18px;
     color: var(--tittle-color);
 }
-.informacoes-vaga{
+
+.informacoes-vaga {
     display: flex;
     gap: 24px;
 }
+
 .informacoes-vaga span {
     font-size: 16px;
     color: var(--text-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .vagas-container {
+        margin-top: 48px;
+        padding: 0 16px;
+    }
+
+    .vagas-abertas h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .vagas-abertas p {
+        font-size: 13px;
+        
+    }
+
+    .image-team {
+        width: 500px;
+        height: 200px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .image-team img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .vagas-lista {
+        gap: 32px;
+        margin-bottom: 48px;
+    }
+
+    .informacoes {
+        padding: 16px;
+    }
+
+    .informacoes-vaga {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .vagas-container {
+        padding: 0 56px;
+    }
+    
 }
