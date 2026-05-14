@@ -1,0 +1,38 @@
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+.barra-footer{
+    display: flex;
+    gap: 36px;
+}
+
+.icone-mais{
+    position: absolute;
+
+    right: 16px;
+    bottom: 80px;
+
+    z-index: 1100;
+}
+.icone-mais img{
+    width: 56px;
+    height: 56px;
+}
+
+.botao-mais-opcoes{
+    width: 56px;
+    height: 56px;
+}
