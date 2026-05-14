@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(lista-consultas.css);
+@import url(footer.css);
 
 *{
     font-family: "Montserrat", sans-serif;
@@ -20,4 +21,7 @@
     
     --tittle-weight: 700;
     --text-weight: 400;
+}
+body{
+    padding-bottom: 80px; 
 }
