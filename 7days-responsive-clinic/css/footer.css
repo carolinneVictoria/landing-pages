@@ -1,4 +1,4 @@
-footer{
+footer {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -8,15 +8,16 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
     z-index: 1000;
 }
-.barra-footer{
+
+.barra-footer {
     display: flex;
     gap: 36px;
 }
 
-.icone-mais{
+.icone-mais {
     position: absolute;
 
     right: 24px;
@@ -24,12 +25,95 @@ footer{
 
     z-index: 1100;
 }
-.icone-mais img{
+
+.icone-mais img {
     width: 56px;
     height: 56px;
 }
 
-.botao-mais-opcoes{
+.botao-mais-opcoes {
     width: 56px;
     height: 56px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-mais-opcoes:hover {
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.ativo {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Botões adicionais */
+.botoes-adicionais {
+    position: fixed;
+    bottom: 135px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.botoes-adicionais.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+.botao-pin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    min-height: 56px;
+}
+.botao-adicional {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 56px;
+    height: 56px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-adicional:active {
+    transform: translateY(0);
+}
+.label-adicional {
+    color: black;
+    font-size: 12px;
+
+    background-color: white;
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+
+    height: 32px;
+
+    box-sizing: border-box;
 }
