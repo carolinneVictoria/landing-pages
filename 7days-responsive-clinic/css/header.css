@@ -34,3 +34,17 @@ header{
     font-size: 14px;
     font-weight: var(--text-weight);
 }
+
+/* Responsividade */
+@media (min-width: 1048px) {
+    .header-perfil{
+        width: 96px;
+        height: 96px;
+    }
+    .info-header h1{
+        font-size: 31px;
+    }
+    .info-header p{
+        font-size: 18px;
+    }
+}
