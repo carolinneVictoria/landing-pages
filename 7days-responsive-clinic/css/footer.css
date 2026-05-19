@@ -15,7 +15,7 @@ footer {
 .icone-mais {
     all: unset;
     position: absolute;
-    right: 54px;
+    right: 34px;
     bottom: 80px;
     z-index: 1100;
     width: 56px;
@@ -50,6 +50,8 @@ footer {
 
 .barra-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 36px;
 }
 
@@ -114,7 +116,7 @@ footer {
 .botoes-adicionais {
     position: fixed;
     bottom: 140px;
-    right: 54px;
+    right: 34px;
     display: flex;
     flex-direction: column;
     z-index: 1050;
