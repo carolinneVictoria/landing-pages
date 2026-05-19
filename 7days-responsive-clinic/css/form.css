@@ -1,0 +1,133 @@
+.formulario-final {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1048px) {
+    body {
+        margin-left: 210px;
+        padding-bottom: 24px;
+    }
+
+    .formulario-final {
+        display: block;
+        padding: 0 24px 24px;
+    }
+}
+
+.container-formulario {
+    background: white;
+    border: 1px solid #ECECEC;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 0 16px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.container-formulario h2 {
+    color: var(--tittle-color);
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--tittle-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container-formulario input,
+.container-formulario textarea {
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #464646;
+    background: #FAFAFA;
+}
+
+.container-formulario textarea {
+    resize: vertical;
+}
+
+.formulario-final .tipo-consulta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-final .tipo-consulta input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.formulario-final .tipo-consulta label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    background: #FAFAFA;
+    color: var(--tittle-color);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.formulario-final .tipo-consulta label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #DCDCDC;
+    border-radius: 50%;
+    background: white;
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.formulario-final input[type="radio"]:checked+label {
+    border-color: var(--button-adress);
+    background: rgba(72, 148, 255, 0.12);
+}
+
+.formulario-final input[type="radio"]:checked+label::before {
+    border-color: var(--button-adress);
+    background: var(--button-adress);
+    box-shadow: inset 0 0 0 4px white;
+}
+
+.formulario-final .tipo-consulta label:hover {
+    border-color: #B8CFF7;
+}
+
+
+
+
+.botao-submit {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--button-adress);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao-submit:hover {
+    filter: brightness(0.95);
+}
