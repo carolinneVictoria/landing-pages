@@ -19,11 +19,16 @@
     font-size: 16px;
     font-weight: var(--tittle-weight);
 }
+.dia-consulta h3{
+    color: var(--tittle-color);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 
 .consulta {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     border-radius: 8px;
 
     padding: 16px;
@@ -104,7 +109,7 @@ hr {
     display: flex;
     gap: 16px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .botao-ligar-video,
@@ -121,6 +126,8 @@ hr {
     color: var(--tittle-color);
     font-size: 14px;
     font-weight: 500;
+    width: 50%;
+    border: 1px solid rgb(210, 210, 210);
 }
 
 .botao-ligar-video {
@@ -128,6 +135,7 @@ hr {
     color: white;
     font-size: 14px;
     font-weight: 500;
+    width: 50%;
 }
 
 .botao-endereco {

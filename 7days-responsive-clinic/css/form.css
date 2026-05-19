@@ -1,7 +1,7 @@
 .formulario-final {
     display: none;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+
 }
 
 @media (min-width: 1048px) {
@@ -15,7 +15,6 @@
         padding: 0 24px 24px;
     }
 }
-
 .container-formulario {
     background: white;
     border: 1px solid #ECECEC;
@@ -27,9 +26,8 @@
 
 .container-formulario h2 {
     color: var(--tittle-color);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-size: 20px;
-    text-align: center;
 }
 
 .container-formulario label {
@@ -54,6 +52,14 @@
 
 .container-formulario textarea {
     resize: vertical;
+}
+.linha-data-hora {
+    display: flex;
+    gap: 16px;
+}
+
+.linha-data-hora .campo {
+    flex: 1;
 }
 
 .formulario-final .tipo-consulta {

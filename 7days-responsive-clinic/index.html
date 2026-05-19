@@ -307,7 +307,7 @@
                 <h2 id="titulo-formulario">Adicionar nova consulta</h2>
                 <form>
                     <label for="nome">Nome completo</label>
-                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome" />
+                    <input id="nome" name="nome" type="text" placeholder="Digite o nome completo do paciente" />
 
                     <div class="tipo-consulta-fieldset">
                         <label>Tipo de consulta</label>
@@ -320,11 +320,17 @@
                         </div>
                     </div>
 
-                    <label for="data-consulta">Data da consulta</label>
-                    <input id="data-consulta" name="data-consulta" type="date" />
+                    <div class="linha-data-hora">
+                        <div class="campo">
+                            <label for="data-consulta">Data da consulta</label>
+                            <input id="data-consulta" name="data-consulta" type="date" />
+                        </div>
 
-                    <label for="hora-consulta">Hora da consulta</label>
-                    <input id="hora-consulta" name="hora-consulta" type="time" />
+                        <div class="campo">
+                            <label for="hora-consulta">Hora da consulta</label>
+                            <input id="hora-consulta" name="hora-consulta" type="time" />
+                        </div>
+                    </div>
 
                     <label for="mensagem">Observações</label>
                     <textarea id="mensagem" name="mensagem" rows="4" placeholder="Detalhes da consulta"></textarea>
