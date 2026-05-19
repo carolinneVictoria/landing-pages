@@ -12,11 +12,6 @@ footer {
     z-index: 1000;
 }
 
-.barra-footer {
-    display: flex;
-    gap: 36px;
-}
-
 .icone-mais {
     position: absolute;
 
@@ -24,11 +19,6 @@ footer {
     bottom: 80px;
 
     z-index: 1100;
-}
-
-.icone-mais img {
-    width: 56px;
-    height: 56px;
 }
 
 .botao-mais-opcoes {
@@ -40,6 +30,32 @@ footer {
 
 .botao-mais-opcoes:hover {
     transform: scale(1.1);
+}
+
+.barra-footer {
+    display: flex;
+    gap: 36px;
+}
+
+
+.elemento-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.consultas, .clientes, .relatorios, .menu{
+    width: 20px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+}
+
+.elemento-footer p {
+    color: var(--tittle-color);
+    font-size: 12px;
+    font-weight: var(--text-weight);
 }
 
 /* Overlay */
@@ -75,20 +91,24 @@ footer {
     visibility: hidden;
     transition: all 0.3s ease;
 }
+
 .botoes-adicionais.ativo {
     opacity: 1;
     visibility: visible;
 }
+
 .botoes-adicionais img:hover {
     transform: scale(1.1);
 }
-.botao-pin{
+
+.botao-pin {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 12px;
     min-height: 56px;
 }
+
 .botao-adicional {
     display: flex;
     justify-content: center;
@@ -104,6 +124,7 @@ footer {
 .botao-adicional:active {
     transform: translateY(0);
 }
+
 .label-adicional {
     color: black;
     font-size: 12px;
@@ -119,4 +140,42 @@ footer {
     height: 32px;
 
     box-sizing: border-box;
+}
+
+@media (min-width: 1048px) {
+    footer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 40px;
+        box-shadow: 2px 0 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .barra-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 0 12px;
+        width: 100%;
+    }
+    .elemento-footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px
+    }
+    .elemento-footer p{
+        font-size: 15px;
+    }
+    .icone-mais,
+    .overlay,
+    .botoes-adicionais {
+        display: none !important;
+    }
 }
