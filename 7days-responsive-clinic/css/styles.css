@@ -1,15 +1,17 @@
 @import url(header.css);
 @import url(lista-consultas.css);
 @import url(footer.css);
+@import url(form.css);
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-:root{
+
+:root {
     --tittle-color: #464646;
     --text-color: #A3A3A3;
 
@@ -18,10 +20,11 @@
     --button-adress: #4894FF;
 
     --divisor: #464646;
-    
+
     --tittle-weight: 700;
     --text-weight: 400;
 }
-body{
-    padding-bottom: 80px; 
+
+body {
+    padding-bottom: 80px;
 }
