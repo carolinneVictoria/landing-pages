@@ -6,7 +6,7 @@
     margin-bottom: 70px;
 }
 
-.dia-consulta {
+.dia-consulta.titulo-geral {
     height: 42px;
     display: flex;
     align-items: center;
