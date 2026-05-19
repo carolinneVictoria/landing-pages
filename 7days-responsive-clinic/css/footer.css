@@ -13,23 +13,39 @@ footer {
 }
 
 .icone-mais {
+    all: unset;
     position: absolute;
-
-    right: 24px;
+    right: 54px;
     bottom: 80px;
-
     z-index: 1100;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--button-adress);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
 }
 
 .botao-mais-opcoes {
-    width: 56px;
-    height: 56px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .botao-mais-opcoes:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.botao-mais-opcoes:focus-visible,
+.botao-adicional:focus-visible,
+.elemento-footer:focus-visible {
+    outline: 2px solid var(--button-adress);
+    outline-offset: 3px;
 }
 
 .barra-footer {
@@ -38,24 +54,40 @@ footer {
 }
 
 
-.elemento-footer{
+.elemento-footer {
+    all: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
 }
-.consultas, .clientes, .relatorios, .menu{
+
+.consultas,
+.clientes,
+.relatorios,
+.menu {
     width: 20px;
     height: 22px;
     object-fit: contain;
     display: block;
+    cursor: pointer;
 }
 
-.elemento-footer p {
+.elemento-footer span {
     color: var(--tittle-color);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: var(--text-weight);
+    cursor: pointer;
+}
+
+.elemento-footer.ativa span {
+    color: var(--button-adress);
+}
+
+.elemento-footer.ativa img {
+    filter:
+        invert(32%) sepia(99%) saturate(1927%) hue-rotate(203deg) brightness(97%) contrast(101%);
 }
 
 /* Overlay */
@@ -82,14 +114,14 @@ footer {
 .botoes-adicionais {
     position: fixed;
     bottom: 140px;
-    right: 24px;
+    right: 54px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     z-index: 1050;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    align-items: flex-end;
 }
 
 .botoes-adicionais.ativo {
@@ -97,29 +129,33 @@ footer {
     visibility: visible;
 }
 
-.botoes-adicionais img:hover {
-    transform: scale(1.1);
+.botao-adicional:hover {
+    transform: scale(1.05);
 }
 
-.botao-pin {
+.botao-pin{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 12px;
     min-height: 56px;
 }
 
 .botao-adicional {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    all: unset;
     width: 56px;
     height: 56px;
-    color: white;
-    font-size: 24px;
+    background: var(--button-adress);
+    border: none;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+
 
 .botao-adicional:active {
     transform: translateY(0);
@@ -164,15 +200,18 @@ footer {
         padding: 0 12px;
         width: 100%;
     }
-    .elemento-footer{
+
+    .elemento-footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 10px
     }
-    .elemento-footer p{
+
+    .elemento-footer p {
         font-size: 15px;
     }
+
     .icone-mais,
     .overlay,
     .botoes-adicionais {
