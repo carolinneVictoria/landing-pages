@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
+    <!--<a href="https://www.flaticon.com/br/icones-gratis/predicao" title="predição ícones">Predição ícones criados por surang - Flaticon</a>-->
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>MedSync</title>
 </head>
@@ -298,22 +300,33 @@
 
     <section class="formulario-final">
         <div class="container-formulario">
-            <h2>Solicitar nova consulta</h2>
-            <p>Envie os dados e a equipe entrará em contato para agendar.</p>
+            <h2>Adicionar nova consulta</h2>
             <form>
                 <label for="nome">Nome completo</label>
                 <input id="nome" type="text" placeholder="Digite seu nome" />
 
-                <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="seu@email.com" />
+                <label>Tipo de Consulta</label>
 
-                <label for="data">Data preferida</label>
+                <div class="tipo-consulta">
+
+                    <input id="presencial" type="radio" name="consulta" value="Presencial" />
+                    <label for="presencial">Consulta Remota</label>
+                
+                    <input id="local" type="radio" name="consulta" value="No Local" />
+                    <label for="local">Consulta no local</label>
+                </div>
+
+
+                <label for="data">Data da Consulta</label>
                 <input id="data" type="date" />
 
-                <label for="mensagem">Mensagem</label>
+                <label for="data">Hora da Consulta</label>
+                <input id="hora" type="time" />
+
+                <label for="mensagem">Observações</label>
                 <textarea id="mensagem" rows="4" placeholder="Detalhes da consulta"></textarea>
 
-                <button type="submit" class="botao-submit">Enviar pedido</button>
+                <button type="submit" class="botao-submit">Salvar Consulta</button>
             </form>
         </div>
     </section>
@@ -324,19 +337,19 @@
         </div>
         <div class="barra-footer">
             <div class="elemento-footer">
-                <img class="consultas" src="assets/calendario.png" alt="Consultas" />
+                <img class="consultas" src="assets/calendar.svg" alt="Consultas" />
                 <p>Consultas</p>
             </div>
             <div class="elemento-footer">
-                <img class="clientes" src="assets/clientes-icone.png" alt="Clientes" />
+                <img class="clientes" src="assets/clientes.svg" alt="Clientes" />
                 <p>Clientes</p>
             </div>
             <div class="elemento-footer">
-                <img class="relatorios" src="assets/relatorios-icone.png" alt="Relatórios" />
+                <img class="relatorios" src="assets/graph-bar.svg" alt="Relatórios" />
                 <p>Relatórios</p>
             </div>
             <div class="elemento-footer">
-                <img class="menu" src="assets/menu-icone.png" alt="Menu" />
+                <img class="menu" src="assets/barra-de-menu.svg" alt="Menu" />
                 <p>Menu</p>
             </div>
         </div>
