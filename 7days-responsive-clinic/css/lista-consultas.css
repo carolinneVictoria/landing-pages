@@ -16,7 +16,7 @@
 .dia-consulta h2 {
     margin: 8px 0;
     color: var(--tittle-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--tittle-weight);
 }
 .dia-consulta h3{
@@ -59,7 +59,7 @@
 
 .info h2 {
     color: var(--tittle-color);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: var(--tittle-weight);
     line-height: 160%;
 }
@@ -76,7 +76,7 @@
 }
 
 .tipo-consulta p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--text-color);
     font-weight: var(--text-weight);
 }
@@ -100,7 +100,7 @@ hr {
 
 .opcoes-consulta p {
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--tittle-color);
 }
@@ -124,7 +124,7 @@ hr {
 .botao-ligar-audio {
     background-color: var(--button-audio);
     color: var(--tittle-color);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 500;
     width: 50%;
     border: 1px solid rgb(210, 210, 210);
@@ -133,7 +133,7 @@ hr {
 .botao-ligar-video {
     background-color: var(--button-video);
     color: white;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 500;
     width: 50%;
 }
@@ -141,7 +141,7 @@ hr {
 .botao-endereco {
     background-color: var(--button-adress);
     color: white;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 500;
     width: 100%;
 }
