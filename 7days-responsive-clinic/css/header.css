@@ -23,12 +23,12 @@ header{
 }
 .info-header h1{
     color: var(--tittle-color);
-    font-size: 22px;
+    font-size: 1.37rem;
     font-weight: var(--tittle-weight);
 }
 .info-header p{
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: var(--text-weight);
 }
 
@@ -39,9 +39,9 @@ header{
         height: 96px;
     }
     .info-header h1{
-        font-size: 31px;
+        font-size: 1.87rem;
     }
     .info-header p{
-        font-size: 18px;
+        font-size: 1.12rem;
     }
 }
