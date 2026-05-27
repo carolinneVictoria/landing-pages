@@ -27,14 +27,14 @@
 .container-formulario h2 {
     color: var(--tittle-color);
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .container-formulario label {
     display: block;
     margin-bottom: 8px;
     color: var(--tittle-color);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 600;
 }
 
@@ -45,7 +45,7 @@
     border-radius: 12px;
     padding: 12px 14px;
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 0.87rem;
     color: #464646;
     background: #FAFAFA;
 }
@@ -87,7 +87,7 @@
     border-radius: 12px;
     background: #FAFAFA;
     color: var(--tittle-color);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 500;
     cursor: pointer;
     transition: border-color 0.2s ease, background-color 0.2s ease;
@@ -129,7 +129,7 @@
     border: none;
     background: var(--button-adress);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
