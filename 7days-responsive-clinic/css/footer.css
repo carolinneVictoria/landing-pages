@@ -78,7 +78,7 @@ footer {
 
 .elemento-footer span {
     color: var(--tittle-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: var(--text-weight);
     cursor: pointer;
 }
@@ -165,7 +165,7 @@ footer {
 
 .label-adicional {
     color: black;
-    font-size: 12px;
+    font-size: 0.75rem;
 
     background-color: white;
     padding: 6px 12px;
@@ -211,7 +211,7 @@ footer {
     }
 
     .elemento-footer p {
-        font-size: 15px;
+        font-size: 0.93rem;
     }
 
     .icone-mais,
